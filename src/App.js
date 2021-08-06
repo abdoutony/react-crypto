@@ -8,7 +8,7 @@ import Currency from './routes/Currency';
 function App() {
   return (
     <div className="App">
-        <Router>
+        <Router basename={'/react-crypto/'}>
            <Route path='/' exact render={(props)=><Main />} />
            <Route path='/currency/:id' render= {(props)=> <Currency />} />
         </Router>
